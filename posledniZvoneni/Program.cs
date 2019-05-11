@@ -36,7 +36,7 @@ namespace posledniZvoneni
             zvuk.Play();
         }
         public static void Frm(Bitmap bmpScreenshot) {
-            Application.Run(new Form1(bmpScreenshot,Properties.Resources.bsod));
+            Application.Run(new Form1(bmpScreenshot,Properties.Resources.bsod,Properties.Resources.Never_gonna_give_you_up));
         }
     }
 }
