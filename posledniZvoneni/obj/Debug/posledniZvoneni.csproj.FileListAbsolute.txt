@@ -1,0 +1,14 @@
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csprojAssemblyReference.cache
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.Form1.resources
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.Properties.Resources.resources
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.GenerateResource.cache
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.exe.config
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.exe
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.pdb
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.exe
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.pdb
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.xml
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.CopyComplete
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\50HzSquare.wav
