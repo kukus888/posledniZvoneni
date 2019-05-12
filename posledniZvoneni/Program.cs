@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace posledniZvoneni
 {
-    static class Program
+    class Program
     {
         /// <summary>
         /// Hlavní vstupní bod aplikace.
@@ -36,9 +36,20 @@ namespace posledniZvoneni
             t.SetApartmentState(ApartmentState.STA);
             t.Start();
             zvuk.Play();
+            do
+            {
+                if (Form1.IsKeyLocked(Keys.Scroll)) {
+                    t.Abort();
+                    break;
+                }
+            } while (t.IsAlive);
         }
         public static void Frm(Bitmap bmpScreenshot) {
-            Application.Run(new Form1(bmpScreenshot,Properties.Resources.bsod));
+            try
+            {
+                Application.Run(new Form1(bmpScreenshot, Properties.Resources.bsod));
+            }
+            catch (ThreadAbortException) { }
         }
     }
 }
