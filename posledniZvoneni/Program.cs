@@ -49,7 +49,7 @@ namespace posledniZvoneni
             {
                 Application.Run(new Form1(bmpScreenshot, Properties.Resources.bsod));
             }
-            catch (ThreadAbortException) { }
+            catch (Exception e) { }
         }
     }
 }

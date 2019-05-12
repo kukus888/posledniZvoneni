@@ -12,7 +12,7 @@ namespace posledniZvoneni
     {
         public Form1(Bitmap pozadi,Bitmap bsod)
         {
-            Cursor.Show();
+            Cursor.Hide();
             this.BackgroundImage = pozadi;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
@@ -21,7 +21,6 @@ namespace posledniZvoneni
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             this.Show();
-            this.Cursor = new Cursor(Cursor.Current.Handle);
             Stopwatch sw = new Stopwatch();
             Bitmap mys = Properties.Resources.mys;
             sw.Start();
@@ -40,7 +39,6 @@ namespace posledniZvoneni
             sw.Stop();
             this.BackgroundImage = bsod;
             this.Refresh();
-            Cursor.Hide();
             Thread.Sleep(3000);
             var swf = new AxShockwaveFlashObjects.AxShockwaveFlash();
             swf.BeginInit();
