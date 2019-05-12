@@ -11,7 +11,7 @@ namespace posledniZvoneni
     {
         public Form1(Bitmap pozadi,Bitmap bsod)
         {
-            //Cursor.Hide();
+            Cursor.Hide();
             this.BackgroundImage = pozadi;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
