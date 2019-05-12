@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Threading;
 using AxShockwaveFlashObjects;
 using System.IO;
+using System.Diagnostics;
 
 namespace posledniZvoneni
 {
@@ -11,17 +12,35 @@ namespace posledniZvoneni
     {
         public Form1(Bitmap pozadi,Bitmap bsod)
         {
-            Cursor.Hide();
+            Cursor.Show();
             this.BackgroundImage = pozadi;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
             this.Height = Screen.PrimaryScreen.Bounds.Height;
             this.Visible = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer,true);
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             this.Show();
-            Thread.Sleep(5000);
+            this.Cursor = new Cursor(Cursor.Current.Handle);
+            Stopwatch sw = new Stopwatch();
+            Bitmap mys = Properties.Resources.mys;
+            sw.Start();
+            while (sw.ElapsedMilliseconds<=5000) {
+                for (int x = 0; x <= 11; x++) {
+                    for (int y = 0; y <= 20; y++) {
+                        try
+                        {
+                            pozadi.SetPixel(x + System.Windows.Forms.Cursor.Position.X, y + System.Windows.Forms.Cursor.Position.Y, mys.GetPixel(x, y));
+                        }
+                        catch (Exception e) { }
+                    }
+                }
+                this.Refresh();
+            }
+            sw.Stop();
             this.BackgroundImage = bsod;
             this.Refresh();
+            Cursor.Hide();
             Thread.Sleep(3000);
             var swf = new AxShockwaveFlashObjects.AxShockwaveFlash();
             swf.BeginInit();

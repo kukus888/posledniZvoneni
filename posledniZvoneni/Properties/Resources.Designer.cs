@@ -80,6 +80,16 @@ namespace posledniZvoneni.Properties {
         }
         
         /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mys {
+            get {
+                object obj = ResourceManager.GetObject("mys", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Byte[].
         /// </summary>
         internal static byte[] Never_gonna_give_you_up {

@@ -88,6 +88,7 @@
     <Content Include="50HzSquare.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\mys.png" />
     <None Include="Resources\Never_gonna_give_you_up.swf" />
     <None Include="bin\Debug\bsod.png" />
     <None Include="Resources\bsod.bmp" />
