@@ -12,3 +12,10 @@ D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.dll
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.xml
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.CopyComplete
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\50HzSquare.wav
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\Vlc.DotNet.Core.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\Vlc.DotNet.Core.Interops.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\Interop.ShockwaveFlashObjects.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.ResolveComReference.cache

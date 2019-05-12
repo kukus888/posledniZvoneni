@@ -32,11 +32,13 @@ namespace posledniZvoneni
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Cursor.Hide();
-            new Thread(new ThreadStart(() => Frm(bmpScreenshot))).Start();
+            var t = new Thread(new ThreadStart(() => Frm(bmpScreenshot)));
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
             zvuk.Play();
         }
         public static void Frm(Bitmap bmpScreenshot) {
-            Application.Run(new Form1(bmpScreenshot,Properties.Resources.bsod,Properties.Resources.Never_gonna_give_you_up));
+            Application.Run(new Form1(bmpScreenshot,Properties.Resources.bsod));
         }
     }
 }
