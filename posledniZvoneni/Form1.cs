@@ -38,37 +38,38 @@ namespace posledniZvoneni
                 this.Refresh();
             }
             sw.Stop();
-            this.BackgroundImage = bsod;
+            this.BackgroundImage = bsod;//0%
             this.Refresh();
-            Thread.Sleep(3000);
-           
+            Thread.Sleep(500);//10%
+
+            Thread.Sleep(500);//20%
+
+            Thread.Sleep(500);//30%
+
+            Thread.Sleep(500);//40%
+
+            Thread.Sleep(500);//50%
+
+            Thread.Sleep(500);//60%
+
+            Thread.Sleep(500);//70%
+
+            Thread.Sleep(500);//80%
+
+            Thread.Sleep(500);//90%
+            
+            Thread.Sleep(500);//100%
             swf.BeginInit();
             swf.Dock = DockStyle.Fill;
             swf.Name = "PosledniZvoneni";
             swf.SetBounds(0, 0, Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             swf.TabIndex = 0;
-           
             swf.EndInit();
             this.Controls.Add(swf);
             byte[] data = Properties.Resources.Never_gonna_give_you_up;//Zde zmen video embedovane v resources.resX souboru
             string filePath = Application.StartupPath;
             swf.LoadMovie(0, filePath + @"\movieNever.swf");//!!!!!!!pro definovani videa pozmen nazev v uvozovkach !!!!!!!!!!!
             swf.Play();
-
-            
-        }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.End)
-            {
-                this.Close();
-            }
-        }
-
-        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
         }
     }
 }
