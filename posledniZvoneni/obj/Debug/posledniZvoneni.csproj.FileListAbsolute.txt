@@ -17,3 +17,20 @@ D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\bin\Debug\AxInterop.Sh
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\Interop.ShockwaveFlashObjects.dll
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
 D:\Visual Studio Projekty\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.ResolveComReference.cache
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.exe.config
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.ResolveComReference.cache
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.exe
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.pdb
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\50HzSquare.wav
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.exe
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\posledniZvoneni.pdb
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.dll
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\CSCore.xml
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csprojResolveAssemblyReference.cache
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.Form1.resources
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.Properties.Resources.resources
+C:\Users\fredy\Source\Repos\posledniZvoneni\posledniZvoneni\obj\Debug\posledniZvoneni.csproj.GenerateResource.Cache

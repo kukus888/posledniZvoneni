@@ -38,7 +38,8 @@ namespace posledniZvoneni
             zvuk.Play();
             do
             {
-                if (Form1.IsKeyLocked(Keys.Scroll)) {
+                if (Form1.IsKeyLocked(Keys.NumLock))
+                {
                     t.Abort();
                     break;
                 }
