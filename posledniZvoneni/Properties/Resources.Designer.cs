@@ -88,15 +88,5 @@ namespace posledniZvoneni.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Vyhledává lokalizovaný prostředek typu System.Byte[].
-        /// </summary>
-        internal static byte[] Never_gonna_give_you_up {
-            get {
-                object obj = ResourceManager.GetObject("Never_gonna_give_you_up", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

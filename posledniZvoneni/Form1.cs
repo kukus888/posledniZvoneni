@@ -66,7 +66,6 @@ namespace posledniZvoneni
             swf.TabIndex = 0;
             swf.EndInit();
             this.Controls.Add(swf);
-            byte[] data = Properties.Resources.Never_gonna_give_you_up;//Zde zmen video embedovane v resources.resX souboru
             string filePath = Application.StartupPath;
             swf.LoadMovie(0, filePath + @"\movieNever.swf");//!!!!!!!pro definovani videa pozmen nazev v uvozovkach !!!!!!!!!!!
             swf.Play();
