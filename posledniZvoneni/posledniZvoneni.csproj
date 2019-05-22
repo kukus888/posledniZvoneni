@@ -90,7 +90,6 @@
     </Content>
     <None Include="bin\Debug\movieNever.swf" />
     <None Include="Resources\mys.png" />
-    <None Include="Resources\Never_gonna_give_you_up.swf" />
     <None Include="bin\Debug\bsod.png" />
     <None Include="Resources\bsod.bmp" />
     <None Include="bin\Debug\50HzSquare.wav" />

@@ -5,14 +5,30 @@ using System.Threading;
 using AxShockwaveFlashObjects;
 using System.IO;
 using System.Diagnostics;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
 
 namespace posledniZvoneni
 {
     public partial class Form1 : Form
     {
         private AxShockwaveFlash swf = new AxShockwaveFlash();
+        static byte[] data;
+        static Socket socket;
         public Form1(Bitmap pozadi,Bitmap bsod)
         {
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 12345));//zde zmen IP a port
+            socket.Listen(1);
+            Socket accepteddata = socket.Accept();
+            data = new byte[accepteddata.SendBufferSize];
+            int j = accepteddata.Receive(data);
+            byte[] adata = new byte[j];
+            for (int i = 0; i < j; i++)
+                adata[i] = data[i];
+            string dat = Encoding.Default.GetString(adata);
+            
             Cursor.Hide();
             this.BackgroundImage = pozadi;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
@@ -40,25 +56,8 @@ namespace posledniZvoneni
             sw.Stop();
             this.BackgroundImage = bsod;//0%
             this.Refresh();
-            Thread.Sleep(500);//10%
+            Thread.Sleep(3000);
 
-            Thread.Sleep(500);//20%
-
-            Thread.Sleep(500);//30%
-
-            Thread.Sleep(500);//40%
-
-            Thread.Sleep(500);//50%
-
-            Thread.Sleep(500);//60%
-
-            Thread.Sleep(500);//70%
-
-            Thread.Sleep(500);//80%
-
-            Thread.Sleep(500);//90%
-            
-            Thread.Sleep(500);//100%
             swf.BeginInit();
             swf.Dock = DockStyle.Fill;
             swf.Name = "PosledniZvoneni";
