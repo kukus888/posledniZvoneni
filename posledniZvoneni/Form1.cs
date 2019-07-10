@@ -18,6 +18,7 @@ namespace posledniZvoneni
         static Socket socket;
         public Form1(Bitmap pozadi,Bitmap bsod)
         {
+            /* //ODKOMENTUJ BLOK PRO POUZITI TCP? TREBA DODELAT!
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 12345));//zde zmen IP a port
             socket.Listen(1);
@@ -28,7 +29,7 @@ namespace posledniZvoneni
             for (int i = 0; i < j; i++)
                 adata[i] = data[i];
             string dat = Encoding.Default.GetString(adata);
-            
+            */
             Cursor.Hide();
             this.BackgroundImage = pozadi;
             this.Width = Screen.PrimaryScreen.Bounds.Width;
