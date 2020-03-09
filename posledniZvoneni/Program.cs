@@ -7,14 +7,41 @@ using System.Drawing;
 using CSCore.CoreAudioAPI;
 using CSCore.SoundIn;
 using CSCore.Codecs.WAV;
+using System.Xml;
 using System.Threading;
 using CSCore.Streams;
 using System.Diagnostics;
+using System.Data;
+using System.IO;
+using System.Timers;
 
 namespace posledniZvoneni
 {
     class Program
     {
+        
+        public static bool Server()
+        {
+            string path = "XMLServer.xml";
+            bool result = false;
+            try
+            {
+                DataSet ds = new DataSet();
+                ds.ReadXml(path);
+                result = false;
+                string xml = ds.Tables[0].Rows[0][0].ToString();
+                if (xml != "")
+                    result = Boolean.Parse(xml);
+                ds.Dispose();
+                
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("ok");
+            }
+            return result;
+
+        }
         /// <summary>
         /// Hlavní vstupní bod aplikace.
         /// </summary>
@@ -34,17 +61,25 @@ namespace posledniZvoneni
             Cursor.Hide();
             var t = new Thread(new ThreadStart(() => Frm(bmpScreenshot)));
             t.SetApartmentState(ApartmentState.STA);
+            
+            
+            while (!Server())
+            {
+                Thread.Sleep(2000);
+            }
+
             t.Start();
             zvuk.Play();
             do
             {
-                if (Form1.IsKeyLocked(Keys.Scroll))
+                if (Form1.IsKeyLocked(Keys.NumLock))
                 {
                     t.Abort();
                     break;
                 }
             } while (t.IsAlive);
         }
+        
         public static void Frm(Bitmap bmpScreenshot) {
             try
             {

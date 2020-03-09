@@ -88,6 +88,7 @@
     <Content Include="50HzSquare.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="bin\Debug\XMLServer.xml" />
     <None Include="bin\Debug\movieNever.swf" />
     <None Include="Resources\mys.png" />
     <None Include="Resources\Never_gonna_give_you_up.swf" />
